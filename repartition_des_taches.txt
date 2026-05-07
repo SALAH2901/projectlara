@@ -1,0 +1,27 @@
+# Répartition des Tâches - Projet Système de Gestion des Rendez-vous Médicaux
+
+Ce document détaille la répartition du travail de développement et de production du site web entre les membres de l'équipe.
+
+## 1. Imad Salim - Backend & Architecture de Base
+**Responsabilités principales : Conception de la base de données, sécurité et logique serveur.**
+- Configuration initiale du projet Laravel et de l'environnement (`.env`).
+- Conception et création de la base de données (Migrations et Seeders MySQL).
+- Mise en place du système d'authentification basé sur les rôles (Médecins et Patients) avec Laravel Breeze.
+- Création des modèles relationnels (User, Appointment, Message, Rating) et des contrôleurs de base.
+- Gestion de la logique de recherche des médecins (par nom ou spécialité).
+
+## 2. Salah-Eddine Bourray - Frontend & UI/UX Design
+**Responsabilités principales : Interface utilisateur, expérience utilisateur et design adaptatif.**
+- Conception et intégration du thème "Glassmorphism" (effets de verre dépoli, arrière-plans flous).
+- Développement des vues avec le moteur de template Blade et Tailwind CSS v4.
+- Création des tableaux de bord interactifs pour les médecins et les patients.
+- Assurer la responsivité du site (adaptation parfaite sur PC, tablettes et mobiles).
+- Intégration des formulaires de prise de rendez-vous avec un design moderne et intuitif.
+
+## 3. Aimad Boussemoum - Fonctionnalités Avancées & Intégration
+**Responsabilités principales : Fonctionnalités complexes, messagerie et internationalisation.**
+- Développement du système de messagerie asynchrone (chat privé entre le médecin et le patient).
+- Implémentation du système d'évaluation et de commentaires (notation par étoiles et calcul de la moyenne sur le profil du médecin).
+- Mise en place du support multilingue (Anglais, Français, Arabe) incluant la gestion de l'affichage de droite à gauche (RTL) pour l'arabe.
+- Gestion de la logique des statuts de rendez-vous (en attente, accepté, terminé, annulé) et des indisponibilités (jours bloqués).
+- Tests globaux de l'application et correction des bugs finaux (QA).
